@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/home/hero-bg.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/home/hero-bg-min.png);
     background-position: center;
     /* background-size: 100%; */
     box-shadow: 10px 12px 79px rgba(3, 79, 160, 0.36);
