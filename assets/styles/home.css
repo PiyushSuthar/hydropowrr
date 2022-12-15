@@ -122,6 +122,7 @@ header {
     /* transition: all 0.3s cubic-bezier(0.3, 0.5, 0, 1); */
     transition: all 0.3s ease;
 }
+
 .link-card:hover {
     /* color: #fff; */
     background-color: hsla(214, 93%, 42%, 1);
@@ -132,7 +133,7 @@ header {
         radial-gradient(at 96% 86%, hsla(116, 67%, 74%, 1) 0px, transparent 50%),
         radial-gradient(at 57% 69%, hsla(221, 69%, 60%, 1) 0px, transparent 50%),
         radial-gradient(at 0% 12%, hsla(229, 94%, 69%, 1) 0px, transparent 50%),
-        radial-gradient(at 79% 69%, hsla(163, 93%, 76%, 1) 0px, transparent 50%);    
+        radial-gradient(at 79% 69%, hsla(163, 93%, 76%, 1) 0px, transparent 50%);
     box-shadow: 10px 10px 200px 0px rgba(7, 94, 207, 0.493);
     transform: scale(1.01);
 }
@@ -150,9 +151,50 @@ header {
 .link-card p {
     max-width: 80%;
 }
+
 .link-card .link-ctc {
     margin: 15px 0;
     font-weight: 600;
     /* transition:letter-spacing 0.2s cubic-bezier(0.3, 0.5, 0, 1); */
-    transition:letter-spacing 0.2s ease;
+    transition: letter-spacing 0.2s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .stat .stat_num {
+        font-size: 3em;
+    }
+
+    .stat p {
+        font-size: 1.1em;
+    }
+
+    .info-section-title h3 {
+        font-size: 3em;
+    }
+
+    .info-section p {
+        font-size: 1.1em;
+        padding: 10px 0;
+    }
+
+    .dam-working img {
+        width: 100%;
+    }
+    .link-section {
+        flex-direction: column;
+    }
+    .link-card {
+        max-width: 90%;
+        padding: 15px;
+    }
 }

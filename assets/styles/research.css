@@ -65,3 +65,16 @@
     margin: 5px;
     border-radius: 8px;
 } */
+
+@media screen and (max-width: 600px) {
+    .hero h2{
+        font-size: 3em;
+    }
+    .magical-hehe{
+        font-size: 2em;
+        text-align: center;
+    }
+    .article-single  {
+        font-size: 1.1em;
+    }
+}

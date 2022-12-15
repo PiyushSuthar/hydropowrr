@@ -88,3 +88,18 @@ footer .copy-text {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 600px) {
+    .nav{
+        justify-content: center;
+        align-items: center;
+    }
+    .logo h1 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .nav .menu {
+        display: none;
+        flex-direction: row;   
+    }
+}

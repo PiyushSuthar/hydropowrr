@@ -21,8 +21,9 @@
     align-items: center;
     /* justify-content: center; */
     font-weight: 500;
-    max-width: 30%;
+    /* max-width: 30%; */
     text-align: center;
+    padding: 10px;
 }
 
 .stat p {
@@ -32,4 +33,38 @@
 .stat .stat_num {
     font-size: 5em;
     font-weight: 800;
+}
+
+.stat-imgs {
+    display: flex;
+    flex-direction: row;
+}
+.stat-img-single img {
+    width: 100%;
+}
+@media screen and (max-width: 600px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .stat {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .stat .stat_num {
+        font-size: 3em;
+    }
+
+    .stat p {
+        font-size: 1.1em;
+    }
+    .magical-hehe {
+        font-size: 3em;
+    }
+    .stat-imgs {
+        flex-direction: column;
+    }
 }
