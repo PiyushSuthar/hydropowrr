@@ -1,0 +1,10 @@
+.bold {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+    .magical-hehe {
+        font-size: 3em;
+        margin: 10px;
+    }
+}
