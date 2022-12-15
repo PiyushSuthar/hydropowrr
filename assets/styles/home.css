@@ -14,7 +14,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/hero-bg.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/home/hero-bg.png);
     background-position: center;
     /* background-size: 100%; */
     box-shadow: 10px 12px 79px rgba(3, 79, 160, 0.36);
@@ -63,26 +63,96 @@ header {
 /* info section */
 .info-section {
     margin: 5vh 0;
-}
-.info-section-title {
     text-align: center;
 }
 
+.info-section p {
+    font-size: 1.15em;
+}
+
+/* .info-section-title {
+} */
+
 .info-section-title h3 {
     font-size: 5em;
-    background-color:hsla(214,93%,42%,1);
+    background-color: hsla(214, 93%, 42%, 1);
     background-image:
-    radial-gradient(at 23% 92%, hsla(175,92%,70%,1) 0px, transparent 50%),
-    radial-gradient(at 84% 65%, hsla(221,65%,63%,1) 0px, transparent 50%),
-    radial-gradient(at 81% 4%, hsla(160,81%,70%,1) 0px, transparent 50%),
-    radial-gradient(at 96% 86%, hsla(116,67%,74%,1) 0px, transparent 50%),
-    radial-gradient(at 57% 69%, hsla(221,69%,60%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 12%, hsla(229,94%,69%,1) 0px, transparent 50%),
-    radial-gradient(at 79% 69%, hsla(163,93%,76%,1) 0px, transparent 50%);    -webkit-background-clip: text;
+        radial-gradient(at 23% 92%, hsla(175, 92%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 84% 65%, hsla(221, 65%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 81% 4%, hsla(160, 81%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 96% 86%, hsla(116, 67%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 57% 69%, hsla(221, 69%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 12%, hsla(229, 94%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 79% 69%, hsla(163, 93%, 76%, 1) 0px, transparent 50%);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     /* background-size: 100%; */
 
     /* min-height: 20vh; */
+}
 
-    }
+.link-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center; */
+
+}
+
+.link-card {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 40%;
+    /* max-width: 100%; */
+    padding: 20px 15px;
+    /* border: 1px solid; */
+    margin: 10px;
+    border-radius: 12px;
+    /* transition: all 0.3s cubic-bezier(0.3, 0.5, 0, 1); */
+    transition: all 0.3s ease;
+}
+.link-card:hover {
+    /* color: #fff; */
+    background-color: hsla(214, 93%, 42%, 1);
+    background-image:
+        radial-gradient(at 23% 92%, hsla(175, 92%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 84% 65%, hsla(221, 65%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 81% 4%, hsla(160, 81%, 70%, 1) 0px, transparent 50%),
+        radial-gradient(at 96% 86%, hsla(116, 67%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 57% 69%, hsla(221, 69%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 12%, hsla(229, 94%, 69%, 1) 0px, transparent 50%),
+        radial-gradient(at 79% 69%, hsla(163, 93%, 76%, 1) 0px, transparent 50%);    
+    box-shadow: 10px 10px 200px 0px rgba(7, 94, 207, 0.493);
+    transform: scale(1.01);
+}
+
+.link-card:hover .link-ctc {
+    letter-spacing: 1px;
+}
+
+.link-card .link-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.link-card p {
+    max-width: 80%;
+}
+.link-card .link-ctc {
+    margin: 15px 0;
+    font-weight: 600;
+    /* transition:letter-spacing 0.2s cubic-bezier(0.3, 0.5, 0, 1); */
+    transition:letter-spacing 0.2s ease;
+}
