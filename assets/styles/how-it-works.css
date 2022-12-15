@@ -17,3 +17,13 @@
     font-size: 1.1em;
     font-weight: 500;
 }
+@media screen and (max-width: 600px) {
+    .hero-img h2 {
+        position: unset;
+        font-size: 1.3em;
+        margin: 10px 0;
+    }
+    .hiw-content p {
+        font-weight: 400;
+    }
+}
